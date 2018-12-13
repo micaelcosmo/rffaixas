@@ -1,0 +1,63 @@
+/** Guarda tamanho da faixa **/
+entity Artboard {
+	id Integer,
+    height Integer,
+    width Integer,
+    faixa Integer,
+    art String
+}
+
+/** Guarda informações da faixa **/ 
+entity Faixa {
+	id Integer,
+	usuario Integer,
+    nome String,
+    dataSolicitacao Instant,
+    dataAprovacao Instant,
+    dataPrevisaoEntrega Instant,
+    dataEntrega Instant,
+    valorEstimado Double,
+    valorFinal Double
+}
+
+/** Guarda informações sobre um texto da faixa **/
+entity Texto {
+	id Integer,
+	conteudo String,
+	x Integer,
+	y Integer,
+    tamanho Integer,
+    fonte String,
+    negrito Boolean,
+    italico Boolean,
+    nota String,
+    faixa Integer
+}
+
+/** Guarda informações sobre o usuario **/
+entity Usuario {
+	id Integer,
+    email String,
+    nome String,
+    cpf String,
+    telefone String
+}
+
+relationship OneToMany {
+	Artboard{faixa} to Faixa,
+}
+
+relationship OneToMany {
+	Texto{faixa} to Faixa,
+}
+
+relationship OneToMany {
+	Faixa{usuario} to Usuario,
+}
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+

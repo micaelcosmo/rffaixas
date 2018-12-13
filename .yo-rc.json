@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.github.micaelcosmo.rffaixas"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "microservice",
+    "baseName": "rffaixas",
+    "packageName": "com.github.micaelcosmo.rffaixas",
+    "packageFolder": "com/github/micaelcosmo/rffaixas",
+    "serverPort": "8081",
+    "authenticationType": "oauth2",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NjE4MzIxOGU3YTRlZDU5NjU1OGNlZjRiODAwNDE0MzAzM2Q3Y2IxMmIzMmZmOTJlY2QyMmUwNWRlOWU2OWJkNmVlYmVlY2IzZDJkNTFjNzIzZWRkMzZiN2VmZjdjYzlhN2FkY2YyMmEwNTllNWEwYzZkZmIxYzEzZmVkYjMzNTU=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

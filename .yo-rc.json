@@ -27,6 +27,8 @@
     "enableTranslation": false,
     "clientPackageManager": "npm",
     "skipClient": true,
-    "skipUserManagement": true
+    "skipUserManagement": true,
+    "herokuAppName": "rffaixas",
+    "herokuDeployType": "git"
   }
 }
